@@ -177,9 +177,11 @@ extension StereoView: SCNSceneRendererDelegate {
             targetTime += 2 / 60 // 2 frames ahead
         }
 
+        /*
         if let provider = orientationNode.deviceOrientationProvider, provider.shouldWaitDeviceOrientation(atTime: time) {
             provider.waitDeviceOrientation(atTime: targetTime)
         }
+         */
 
         SCNTransaction.lock()
         SCNTransaction.begin()
